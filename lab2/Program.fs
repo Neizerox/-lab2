@@ -59,7 +59,7 @@ let countWithKDigits k numbers =
 [<EntryPoint>]
 let main argv =
     printfn "Введите числа через пробел:"
-    let input = Console.ReadLine().Split(' ') |> Array.toList |> List.map int
+    let input=Console.ReadLine().Split(' ')|>Array.toList|> List.map int
     
     printfn "Введите число k (количество цифр):"
     let k = Console.ReadLine() |> int
